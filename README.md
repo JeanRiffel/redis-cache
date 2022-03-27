@@ -1,6 +1,6 @@
 # Redis-cache
 
-This is a repo for studying Redis.
+This is a repo for studying <code><img height="20" src="https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white"></code>
 
 Here I want to share simple examples which I have been using for studying.
 

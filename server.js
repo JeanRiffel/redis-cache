@@ -17,8 +17,8 @@ const main = async ()=>{
     try {
         const connected = await connectClient();
         console.log(`Is connected ${ connected} `);
-        const key = 'userName'
-        const name = 'Mary';
+        const key = 'userName'        //The key
+        const name = 'Mary';          //The Value of Key is Mary
 
         if(connected){
             const existKey = await redisClient.exists(key);
@@ -26,7 +26,7 @@ const main = async ()=>{
                 await redisClient.set(key, name);
                 console.log(`setting key [ ${key} ] with value [ ${name} ] `);
             }else{
-                const valueKey = await redisClient.get('name1')
+                const valueKey = await redisClient.get(key)
                 console.log(`the key [ ${key} ] already exists in cache with value [ ${valueKey} ] `);
             }   
         }

@@ -12,6 +12,7 @@ Redis container is available here<br>
 - [Redis Docker](https://hub.docker.com/_/redis)  
 
 - For creating the container of Redis run the command below:
+
   ```docker run --name my-redis -p 6379:6379 -d redis```
 
 - use the command ```docker ps``` for cheking if your docker container is running well.

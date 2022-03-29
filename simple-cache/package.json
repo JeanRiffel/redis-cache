@@ -1,0 +1,17 @@
+{
+  "name": "redis-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,17 +1,15 @@
 const redis = require('redis');
-const redisClient = redis.createClient();
 
 const connect = ()=>{    
-    return new Promise( (resolve, reject)=>{
-        redisClient.connect()
-        .then( ()=>{
-            resolve(true);
-        })
-        .catch((error)=>{
-            reject(error)
-        });
+    return new Promise( async (resolve, reject )=>{
+        try{
+            const redisClient = await redis.createClient();
+            await redisClient.connect();
+             resolve(redisClient);
+        }catch(error){
+            reject(error);
+        }
     });
 }
-
 
 module.exports = { connect };

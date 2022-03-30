@@ -1,0 +1,8 @@
+version: '3'
+services:
+  case:
+    image: redis
+    container_name: redis-api-cache
+    restart: always
+    ports: 
+      - '6379:6379'

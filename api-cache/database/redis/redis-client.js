@@ -1,7 +1,7 @@
 const redis = require('redis');
 const redisClient = redis.createClient();
 
-const connectClientRedis = ()=>{    
+const connect = ()=>{    
     return new Promise( (resolve, reject)=>{
         redisClient.connect()
         .then( ()=>{
@@ -14,4 +14,4 @@ const connectClientRedis = ()=>{
 }
 
 
-module.exports = { connectClientRedis };
+module.exports = { connect };
